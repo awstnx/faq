@@ -1,14 +1,13 @@
-def insertionSort(arr):
-    for i in range(1,len(arr)):
-        key=arr[i]
-        j=i-1
-        while j>=0 and key<arr[j]:
-           arr[j+1]=arr[j]
+def InsertionSort(array):
+    for i in range(1, len(array)):
+        key= array[i]
+        j = i-1
+        while j>=0 and key<array[j]:
+           array[j+1]=array[j]
            j=j-1
-        arr[j+1]=key
-
-#driver code.        
-arr=[12,19,13,15,6]
-insertionSort(arr)
-for i in range(len(arr)):
-    print(arr[i])
+        array[j+1]=key
+        
+array=[12,19,13,15,6]
+insertionSort(array)
+for i in range(len(array)):
+    print(array[i])
